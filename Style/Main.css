@@ -1,0 +1,193 @@
+html {
+	overflow:hidden;
+}
+html, body {
+	height:100%;
+}
+body {
+	margin:0;
+	background:#EAEEF5;
+	font-size:12px;
+	font-family:"\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", Arial, sans-serif;
+}
+a {
+	color:#333;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+h3,iframe {
+	margin:0;
+}
+#top .l, #top .r, #center, #all .left, #all .right, #nav div, #menus h3 div, #foot {
+	position:absolute;
+}
+#top {
+	position:relative;
+	color:#FFF;
+	height:31px;
+	background:#1F4286 url(../Images/top.jpg) repeat-x;
+}
+#top a {
+	color:#FFF;
+	margin:0 2px;
+	text-decoration:underline;
+}
+#top .l, #top .r {
+	top:0;
+	height:27px;
+	line-height:27px;
+}
+#top .l {
+	left:10px;
+	padding-left:21px;
+	background:url(../Images/topicon.gif) no-repeat 0 center;
+}
+#top .r {
+	right:4px;
+}
+/* 中间部分 */
+#center {
+	top:34px;
+	left:0;
+	bottom:30px;
+	width:100%;
+	height:auto;
+}
+#all {
+	position:relative;
+	height:100%;
+}
+#all .left, #all .right {
+	top:0;
+	height:100%;
+	overflow:hidden;
+	background:#FFF;
+	border:1px #BED5F3 solid;
+}
+#all .left {
+	left:4px;
+	width:190px;	/* 菜单宽度 */
+}
+#all .right {
+	/* 下面根据上面菜单修改left=width+10 */
+	left:200px;
+	right:4px;
+	width:auto;
+}
+/* 主要菜单 */
+#nav, #menus h3 {
+	position:relative;
+	color:#183152;
+	font-weight:700;
+	padding-left:10px;
+	background-color:#EFF5FE;
+	height:25px;
+	line-height:25px;
+}
+#nav {
+	background-image:url(../Images/navBg.gif);
+	background-repeat:repeat-x;
+}
+#nav div {
+	top:2px;
+	right:3px;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	background:url(../Images/togglebar.gif) no-repeat -20px 0;
+}
+#nav div:hover {
+	background-position:-20px -20px;
+}
+/* 菜单 */
+#menus {
+	overflow:hidden;
+}
+#menus h3 {
+	cursor:pointer;
+	font-size:12px;
+	border-top:1px #BED5F3 solid;
+	background-image:url(../Images/menusBg.gif);
+	background-repeat:repeat-x;
+}
+#menus h3:hover {
+	background:url(../Images/menusBgOver.gif) repeat-x;
+}
+#menus h3 div {
+	top:2px;
+	right:4px;
+	width:20px;
+	height:20px;
+	background:url(../Images/togglebar.gif) no-repeat;
+}
+#menus h3 div:hover {
+	background-position:0 -20px;
+}
+#menus h3 div.s {
+	background-position:0 -40px;
+}
+#menus h3 div.s:hover {
+	background-position:0 -60px;
+}
+#menus div.m {
+	display:none;
+	font-size:0;
+	border-top:1px #BED5F3 solid;
+	overflow:auto;
+}
+#menus div.m div {
+	color:#333;
+	display:block;
+	font-size:12px;
+	margin:4px;
+	padding-left:5px;
+	height:22px;
+	line-height:22px;
+	border:1px #FFF solid;
+}
+#menus div.m div:hover {
+	background-color:#EEF8FD;
+	border-color:#0085FF;
+}
+#menus div.m a:hover {
+	text-decoration:underline;
+}
+/* 切换菜单的 */
+#tg {
+	display:none;
+	padding-top:2px;
+	background-color:#EAF2FE;
+	height:100%;
+}
+#tg:hover {
+	background-color:#F5F9FA;
+}
+#tg div {
+	margin:0 auto;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+	background:url(../Images/togglebar.gif) no-repeat -20px -40px;
+}
+#tg div:hover {
+	background-position:-20px -60px;
+}
+/* 框架 */
+#mkj {
+	width:100%;
+	height:100%;
+	border:none;
+}
+/* 底部 */
+#foot {
+	left:0;
+	bottom:0;
+	color:#333;
+	height:30px;
+	width:100%;
+	line-height:30px;
+	text-align:center;
+	font-family:Tahoma, "\5FAE\8F6F\96C5\9ED1\0020", sans-serif;
+}
